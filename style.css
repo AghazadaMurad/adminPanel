@@ -142,8 +142,13 @@ aside:hover .top-blue p {
   border-radius: 5px;
   color: green;
   border: 1px solid green;
-  padding: 5px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+
+.bx-plus-circle {
+  color: green;
 }
