@@ -8,15 +8,15 @@ const ulEl = document.querySelector(".aside-rest ul");
 const topP = document.querySelector(".top-blue p");
 
 barsEl.addEventListener("click", (e) => {
-  if (barsEl.classList.contains("yes")) {
-    barsEl.classList.remove("yes");
+  if (!barsEl.classList.contains("yes")) {
+    barsEl.classList.add("yes");
     headPEl.style.display = "block";
     topP.style.display = "block";
     headEl.style.justifyContent = "flex-start";
     ulEl.style.visibility = "visible";
     asideEl.style.width = "260px";
   } else {
-    barsEl.classList.add("yes");
+    barsEl.classList.remove("yes");
     headPEl.style.display = "none";
     topP.style.display = "none";
     headEl.style.justifyContent = "center";
