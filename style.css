@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  gap: 15px;
+  background-color: #f1f1f1;
+  margin: 20px;
+}
+
+aside {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  height: 100vh;
+  width: 60px;
+  transition: all 300ms linear;
+}
+
+aside:hover {
+  width: 260px !important;
+}
+
+.aside-head-title p {
+  display: none;
+}
+aside:hover .aside-head-title p {
+  display: block !important;
+  transition-delay: 300ms;
+}
+aside:hover .aside-head-title {
+  justify-content: flex-start !important;
+  transition-delay: 300ms;
+}
+aside:hover .aside-rest ul {
+  transition-delay: 300ms;
+  visibility: visible !important;
+}
+aside:hover .top-blue p {
+  transition-delay: 300ms;
+  display: block !important;
+}
+
+.aside-rest {
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cont-icon-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-blue {
+  background-color: #1b55e2;
+  padding: 15px;
+  border-radius: 5px 5px 0px 0px;
+}
+.top-blue p {
+  /* transition: all 300ms linear; */
+  display: none;
+  color: #fff;
+}
+
+.aside-head-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.aside-rest ul {
+  list-style: none;
+  margin-left: 40px;
+  visibility: hidden;
+  /* transition: all 100ms linear; */
+}
+
+.aside-rest ul li {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.aside-rest ul li a {
+  display: flex;
+  /* justify-content: center; */
+  gap: 5px;
+  align-items: center;
+  color: #888;
+}
+
+.fa-circle {
+  font-size: 2px;
+}
+
+.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+/* 
+.cont {
+  width: 25px;
+  height: 25px;
+  background-color: #1b55e2;
+} */
+
+.cont-head {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addbtn {
+  border-radius: 5px;
+  color: green;
+  border: 1px solid green;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
