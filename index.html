@@ -20,6 +20,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="bg hidden"></div>
+    <div class="modal hidden">
+      <h2>Add New Name</h2>
+      <div>
+        <input class="addNewInput" placeholder="Enter New Name" type="text" />
+        <button class="addNewBtn">Submit</button>
+      </div>
+    </div>
     <aside>
       <div class="top-blue"><p>EEWF</p></div>
       <div class="aside-rest">
@@ -73,10 +81,22 @@
       <section class="cont">
         <div class="cont-head">
           <p>Alternate pagination</p>
-          <p class="addbtn">
+          <p class="addNew">
             <i class="bx bx-plus-circle"></i> Create Category
           </p>
         </div>
+
+        <section class="body-cont">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody class="lists"></tbody>
+          </table>
+        </section>
       </section>
     </section>
 
