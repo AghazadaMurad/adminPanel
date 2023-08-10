@@ -62,7 +62,7 @@ const displayUsers = () => {
     aBin.innerHTML = `<i class="fa-solid fa-trash"></i>`;
     a.className = "edit";
     aBin.className = "edit";
-    a.href = "/index2.html";
+    a.href = "/addname/index2.html";
 
     tdEdit.append(a, aBin);
     tr.append(tdName, tdEdit);
